@@ -140,10 +140,10 @@ public class PolygonSelector extends MouseAdapter
             for(int whatSpace : whats){
                 if(spacess[i].getPiece().getClass() != Void.class){ // Makes sure only the spaces with pieces show valid options
                     if(polygonPanel.spaces[whatSpace].getPiece().isRed() != spacess[i].getPiece().isRed()){
-                        polygonPanel.colors[whatSpace] = Color.red; // Recognizes enemy piece
+                        //polygonPanel.colors[whatSpace] = Color.red; // Recognizes enemy piece
                     }
                     if(polygonPanel.spaces[whatSpace].getPiece().isRed() == spacess[i].getPiece().isRed()){
-                        polygonPanel.colors[whatSpace] = Color.cyan; // Recognizes enemy piece
+                        //polygonPanel.colors[whatSpace] = Color.cyan; // Recognizes enemy piece
                     }
                     if(polygonPanel.spaces[whatSpace].getPiece().getClass() == Void.class) {// Makes sure no occupied spaces are valid
                         polygonPanel.colors[whatSpace] = Color.green;
