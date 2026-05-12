@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Dejarikt:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Dejarikt_jar</output-path>
-    <root id="archive" name="Dejarik Test.jar">
-      <element id="module-output" name="Dejarik Test" />
-    </root>
-  </artifact>
-</component>
