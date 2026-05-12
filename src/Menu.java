@@ -7,6 +7,7 @@ public class Menu extends JFrame implements ActionListener {
     JPanel bottom = new JPanel(new GridLayout(5,1));
     JPanel bLabels = new JPanel(new GridLayout(1,2));
     JPanel bBox = new JPanel(new GridLayout(1,2));
+    JPanel checkboxRow = new JPanel(new GridLayout(1,2));
     JPanel middle = new JPanel(new GridLayout(1,2));
 
     Portrait redChoice;
@@ -45,8 +46,9 @@ public class Menu extends JFrame implements ActionListener {
         bottom.add(bLabels);
         bottom.add(bBox);
         bottom.add(rules);
-        bottom.add(vsAICheckbox);
-        bottom.add(animCheckbox);
+        checkboxRow.add(vsAICheckbox);
+        checkboxRow.add(animCheckbox);
+        bottom.add(checkboxRow);
         bottom.add(start);
 
         bLabels.add(blueL);
