@@ -21,7 +21,7 @@ public class Menu extends JFrame implements ActionListener {
     JButton start = new JButton("Start");
     JCheckBox vsAICheckbox = new JCheckBox("Play vs AI");
     JCheckBox animCheckbox = new JCheckBox("Combat Animation");
-    //JButton rules = new JButton("Rules");
+    JButton rules = new JButton("Rules");
 
     public static void main(String[] args)
     {
@@ -44,7 +44,7 @@ public class Menu extends JFrame implements ActionListener {
         add(bottom, "South");
         bottom.add(bLabels);
         bottom.add(bBox);
-        //bottom.add(rules);
+        bottom.add(rules);
         bottom.add(vsAICheckbox);
         bottom.add(animCheckbox);
         bottom.add(start);
@@ -60,7 +60,7 @@ public class Menu extends JFrame implements ActionListener {
         pickRed.addItem("Luke");
         pickRed.addItem("C3PO");
         pickRed.addItem("Chewbacca");
-        //rules.addActionListener(this);
+        rules.addActionListener(this);
         start.addActionListener(this);
         pickRed.addActionListener(this);
         pickBlue.addActionListener(this);
@@ -74,6 +74,9 @@ public class Menu extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent a){
+        if(a.getSource() == rules){
+            new RulesScreen();
+        }
         if(a.getSource() == start){
             boolean playVsAI = vsAICheckbox.isSelected();
             int r = pickRed.getSelectedIndex();
